@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <style>
+      .weather-container {
+        text-align: center;
+        font-family: helvetica, Arial, sans-serif;
+      }
+
+      .heading h1 {
+        color: #1a64d6;
+        font-size: 34px;
+        line-height: 48px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .degree h2 {
+        color: #000000;
+        font-size: 34px;
+        line-height: 48px;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      .list li {
+        list-style-type: none;
+        color: #000000;
+        font-size: 16px;
+        /* margin: 0px 282.8px; */
+        padding: 10px 0px;
+        transition: all 200ms ease-in-out;
+        border-radius: 10px;
+        max-width: 380px;
+        margin: 0 auto;
+      }
+
+      li:hover {
+        background: #fffbef;
+      }
+
+      .list h3 {
+        color: #000000;
+        font-size: 18px;
+        margin: 18.7px 0px;
+      }
+
+      .list p {
+        color: #000000;
+        font-size: 18px;
+        font-family: monospace;
+        margin: 18px 0px;
+        opacity: 0.7;
+      }
+
+      button {
+        color: #fff;
+        font-size: 16px;
+        font-family: Arial;
+        background: #1a64d6;
+        /* margin: px auto; */
+        border: 1px solid #1a64d6;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background: white;
+        color: #1a64d6;
+      }
+
+      .coded_by {
+        color: #000000;
+        font-size: 18px;
+        font-family: monospace;
+        margin: 18px 0px;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="weather-container">
+      <div class="heading">
+        <h1>
+          🌤
+          <br />
+          Currently 21° in Tokyo
+        </h1>
+      </div>
+      <div class="degree">
+        <h2>13° / <strong>23°</strong></h2>
+      </div>
+
+      <div class="list">
+        <ul>
+          <li>
+            <h3>🌧Tomorrow</h3>
+            <p>10° / <strong>22°</strong></p>
+          </li>
+
+          <li>
+            <h3>🌥 Saturday</h3>
+            <p>15° / <strong>17°</strong></p>
+          </li>
+
+          <li>
+            <h3>☀️ Sunday</h3>
+            <p>25° / <strong>28°</strong></p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="btn">
+        <button>Change city</button>
+      </div>
+
+      <p class="coded_by">Coded by Olajumoke</p>
+    </div>
+  </body>
+</html>
